@@ -7,5 +7,5 @@ import java.util.List;
 
 public interface ChargeRepository extends JpaRepository<Charge, String> {
 
-    List<Charge> findAllCharges(String id);
+//    List<Charge> findAllCharges(String id);
 }

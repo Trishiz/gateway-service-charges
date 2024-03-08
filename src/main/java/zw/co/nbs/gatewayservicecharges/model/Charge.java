@@ -9,6 +9,8 @@ import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import zw.co.nbs.utils.common.model.generic.UpdatableModel;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -24,11 +26,9 @@ import java.util.Date;
 @JsonDeserialize
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonNaming(PropertyNamingStrategy.SnakeCaseStrategy.class)
-public class Charge implements Serializable {
+public class Charge extends UpdatableModel implements Serializable {
 
     private static final long serialVersionUID = 1L;
-    @Id
-    private String id;
     private String adviceCreditCode;
     private String adviceDebitCode;
     private String debitCode;
@@ -41,11 +41,11 @@ public class Charge implements Serializable {
     private Long maximum;
     private Long minimum;
     private Long transactionalLimit;
-    private int version;
-    private Date createdAt;
-    private Date updatedAt;
-    private Long createdBy;
-    private Long updatedBy;
+//    private int version;
+//    private Date createdAt;
+//    private Date updatedAt;
+//    private Long createdBy;
+//    private Long updatedBy
 
 
 }
