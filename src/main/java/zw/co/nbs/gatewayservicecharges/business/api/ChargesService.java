@@ -1,5 +1,4 @@
 package zw.co.nbs.gatewayservicecharges.business.api;
-import org.springframework.http.ResponseEntity;
 import zw.co.nbs.gatewayservicecharges.model.Charge;
 import zw.co.nbs.gatewayservicecharges.response.ChargeResponse;
 import zw.co.nbs.utils.common.dto.Response;
