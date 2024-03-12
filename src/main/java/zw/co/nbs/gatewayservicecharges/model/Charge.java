@@ -14,6 +14,7 @@ import zw.co.nbs.utils.common.model.generic.UpdatableModel;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 import java.io.Serializable;
+import java.util.Date;
 
 
 @EqualsAndHashCode(callSuper = true)
@@ -41,11 +42,9 @@ public class Charge extends UpdatableModel implements Serializable {
     private Long maximum;
     private Long minimum;
     private Long transactionalLimit;
-//    private int version;
-//    private Date createdAt;
-//    private Date updatedAt;
-//    private Long createdBy;
-//    private Long updatedBy
-
-
+    private int version;
+    private Date createdAt;
+    private Date updatedAt;
+    private Long createdBy;
+    private Long updatedBy;
 }
